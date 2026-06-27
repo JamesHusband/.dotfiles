@@ -1,0 +1,23 @@
+# Ghostty Config
+
+macos-icon = custom-style
+
+macos-icon-screen-color = #26292D
+macos-icon-ghost-color = white
+macos-icon-frame = plastic
+
+macos-titlebar-proxy-icon = hidden
+
+# chalkboard, glass, retro, xray
+
+## The syntax is "key = value". The whitespace around the
+
+window-padding-y = 15,10
+window-padding-x = 10,10
+
+background = 282c34
+foreground = ffffff
+keybind = ctrl+z=close_surface
+keybind = ctrl+d=new_split:right
+
+font-family =

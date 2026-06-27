@@ -1,0 +1,101 @@
+{
+  "items": [
+    {
+      "key": "|",
+      "type": "tmux",
+      "description": "Split right",
+      "command": "split-window -h -c '#{pane_current_path}'"
+    },
+    {
+      "key": "-",
+      "type": "tmux",
+      "description": "Split down",
+      "command": "split-window -v -c '#{pane_current_path}'"
+    },
+    {
+      "key": "c",
+      "type": "tmux",
+      "description": "New window",
+      "command": "new-window -c '#{pane_current_path}'"
+    },
+    {
+      "key": "r",
+      "type": "tmux",
+      "description": "Reload config",
+      "command": "source-file ~/.config/tmux/tmux.conf"
+    },
+    {
+      "key": "p",
+      "type": "popup",
+      "description": "Shell popup",
+      "command": "$SHELL"
+    },
+    {
+      "key": "g",
+      "type": "popup",
+      "description": "Lazygit",
+      "command": "lazygit"
+    },
+    {
+      "key": "w",
+      "type": "group",
+      "description": "+panes",
+      "items": [
+        {
+          "key": "h",
+          "type": "tmux",
+          "description": "Focus left",
+          "command": "select-pane -L"
+        },
+        {
+          "key": "j",
+          "type": "tmux",
+          "description": "Focus down",
+          "command": "select-pane -D"
+        },
+        {
+          "key": "k",
+          "type": "tmux",
+          "description": "Focus up",
+          "command": "select-pane -U"
+        },
+        {
+          "key": "l",
+          "type": "tmux",
+          "description": "Focus right",
+          "command": "select-pane -R"
+        },
+        {
+          "key": "H",
+          "type": "tmux",
+          "description": "Resize left",
+          "command": "resize-pane -L 5"
+        },
+        {
+          "key": "J",
+          "type": "tmux",
+          "description": "Resize down",
+          "command": "resize-pane -D 5"
+        },
+        {
+          "key": "K",
+          "type": "tmux",
+          "description": "Resize up",
+          "command": "resize-pane -U 5"
+        },
+        {
+          "key": "L",
+          "type": "tmux",
+          "description": "Resize right",
+          "command": "resize-pane -R 5"
+        }
+      ]
+    },
+    {
+      "key": "[",
+      "type": "tmux",
+      "description": "Copy mode",
+      "command": "copy-mode"
+    }
+  ]
+}
