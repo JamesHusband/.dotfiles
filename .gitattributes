@@ -1,0 +1,8 @@
+common/git/.config/git/ignore filter=git-crypt diff=git-crypt
+common/git/.config/git/config filter=git-crypt diff=git-crypt
+
+common/ssh/.ssh/config filter=git-crypt diff=git-crypt
+os/macos/ssh/.ssh/config.d/** filter=git-crypt diff=git-crypt
+os/arch/ssh/.ssh/config.d/** filter=git-crypt diff=git-crypt
+
+bitwarden.md filter=git-crypt diff=git-crypt
