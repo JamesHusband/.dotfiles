@@ -1,0 +1,9 @@
+name: claude-analytics
+root: ~/
+
+windows:
+  - analytics:
+      layout: even-horizontal
+      panes:
+        - printf '\033]2;Monitor\033\\' && claude-monitor
+        - printf '\033]2;CodeBurn\033\\' && codeburn --provider claude
