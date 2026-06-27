@@ -1,0 +1,43 @@
+{
+  "name": "bobos-plugin-dotfiles",
+  "description": "BobOS subsystem plugin for user dotfile projection",
+  "version": "0.0.0",
+  "author": "jcdev",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "./dist",
+    "./oclif.manifest.json"
+  ],
+  "main": "dist/src/index.js",
+  "oclif": {
+    "commands": "./dist/src/commands",
+    "topicSeparator": " ",
+    "topics": {
+      "dotfiles": {
+        "description": "manage user dotfile projections"
+      }
+    }
+  },
+  "dependencies": {
+    "@oclif/core": "^4"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1",
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^4",
+    "@types/node": "^22",
+    "eslint": "^9",
+    "eslint-config-oclif": "^6",
+    "eslint-config-prettier": "^10",
+    "oclif": "^4",
+    "shx": "^0.3.3",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint",
+    "test": "npm run build"
+  }
+}
