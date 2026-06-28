@@ -26,10 +26,14 @@
     "@eslint/compat": "^1",
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^4",
+    "@types/chai": "^4",
+    "@types/mocha": "^10",
     "@types/node": "^22",
+    "chai": "^4",
     "eslint": "^9",
     "eslint-config-oclif": "^6",
     "eslint-config-prettier": "^10",
+    "mocha": "^11",
     "oclif": "^4",
     "shx": "^0.3.3",
     "ts-node": "^10",
@@ -38,6 +42,7 @@
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint",
-    "test": "npm run build"
+    "posttest": "npm run lint",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\""
   }
 }
